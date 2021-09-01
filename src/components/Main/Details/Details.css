@@ -1,0 +1,117 @@
+.Details{
+    width: 100%;
+    height: 1024px;
+}
+
+.Details > #backBtn{
+    width: 136px;
+    height: 40px;
+    padding: 10px 39px 10px 32px;
+    border-radius: 6px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.29);
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: var(--backBtn-bgcolor);
+    color: var(--backBtn-colorText);
+    border: none;
+}
+
+.Details > #backBtn:hover{
+    background-color: var(--backBtn-bgcolor-hover);
+    cursor: pointer;
+}
+
+.Details > .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Details > .container > img{
+    max-width: 559.7px;
+    max-height: 401px;
+    border-radius:5px;
+}
+
+.Details > .container > .countryDetails{
+    max-width:559px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Details> .container> .countryDetails >  h2{
+    margin-bottom: 23px;
+    color: var(--card-colorText);
+}
+
+.Details > .container > .countryDetails > .info{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.Details > .container > .countryDetails > .info> .info_part2{
+    margin-left: 30px;
+}
+
+.Details > .container > .countryDetails > .info  p{
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #979797;
+    font-weight: normal;
+}
+
+.Details > .container > .countryDetails > .info .title,
+.Details > .container > .countryDetails > #borderCountries >.title {
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--card-colorText);
+}
+
+.languageComma:not(:last-child):after {
+    content: ", ";
+}
+
+.Details > .container > .countryDetails > #borderCountries{
+    margin-top: 50px;
+    /* display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+
+/* .Details > .container > .countryDetails > #borderCountries >.title > .borders */
+.borders{
+    line-height: 2;
+    margin:5px;
+    padding: 5px 27px 4px 27px;
+    border-radius: 2px; 
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1); 
+    background-color: var(--backBtn-bgcolor);
+    color: var(--backBtn-colorText);
+}
+
+@media screen and (min-width:375px) and (max-width: 1439px) {
+    /*********************** header ***************************/
+    .Details{
+
+    }
+
+
+   }
+
+
+

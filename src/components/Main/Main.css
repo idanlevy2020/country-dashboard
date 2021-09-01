@@ -1,0 +1,39 @@
+.Main{
+    background-color: var(--primary-main-bgcolor);
+    padding-top: 48px;
+}
+
+.Main > .mainChildren{
+    margin: 0px 74px 0px 74px;
+}
+
+.Main > .mainChildren > .inputSrchFilter-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0px 30px 0px;
+}
+
+.Main > .mainChildren > .inputSrchFilter-container > input{
+    background-image: url(./searchicon.png);
+    background-size: 15px;
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+    background-color: var(--input-bgcolor);
+    width: 420px;
+    height: 46px;
+    font-size: 16px;
+    padding: 0px 0px 0px 50px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: none;
+    color: var(--primary-header-color);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--primary-header-color);
+    opacity: 1; /* Firefox */
+}

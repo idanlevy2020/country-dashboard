@@ -1,0 +1,92 @@
+*{
+  font-family: NunitoSans;
+  margin:0px;
+}
+
+.App.theme-light {
+  --primary-header-bgcolor: #ffffff;
+  --primary-header-color : #111517;
+  --primary-main-bgcolor: #fafafa;
+  --input-bgcolor: #fff;
+  --toogleBtn-img: url(./moon.png);
+  --dropbtn-bgcolor: #ffffff;
+  --dropbtn-bgcolor-hover: #e3f1a5;
+  --dropbtn-colorText: #111517;
+  --card-bgcolor: #ffffff;
+  --card-bgcolor-hover: #e3f1a5;
+  --card-colorText: #111517;
+  --backBtn-bgcolor: #ffffff;
+  --backBtn-bgcolor-hover: #e3f1a5;
+  --backBtn-colorText: #111517;
+}
+
+.App.theme-dark {
+  --primary-header-bgcolor: #2b3844;
+  --primary-header-color : #ffffff;
+  --primary-main-bgcolor: #202c36;
+  --input-bgcolor: #2b3844;
+  --toogleBtn-img: url(./moon2.png);
+  --dropbtn-bgcolor: #2b3844;
+  --dropbtn-bgcolor-hover: #495a6b;
+  --dropbtn-colorText: #ffffff;
+  --card-bgcolor: #2b3844;
+  --card-bgcolor-hover: #495a6b;
+  --card-colorText: #ffffff;
+  --backBtn-bgcolor: #2b3844;
+  --backBtn-bgcolor-hover: #495a6b;
+  --backBtn-colorText: #ffffff;
+}
+
+.App{
+  background-color: var(--primary-header-bgcolor);
+  width: 1440px;
+}
+
+.App > .Header{
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App > .Header>  h2{
+  color: var(--primary-header-color);
+  margin: 0 0 48px;
+  margin-top: 23px;
+  margin-bottom: 24px;
+  margin-left:81px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.App > .Header > .toggleBtn{
+  background-image: var(--toogleBtn-img);
+  background-size: 15px;
+  background-position: 1px 3px;
+  background-repeat: no-repeat;
+  background-color: var(--primary-header-bgcolor);
+  color: var(--primary-header-color);
+  width:100px;
+  padding: 0px 0px 0px 10px;
+  height: 22px;
+  border: none;
+}
+
+.App > .Header > .toggleBtn:hover{
+  cursor: pointer;
+}
+
+
+/* Responsive layout - when the screen is between 375px and 1439px */
+   @media screen and (min-width:375px) and (max-width: 1439px) {
+    /*********************** header ***************************/
+    .App{
+      width: 100%;
+    }
+
+    .App > .Header>  h2{
+      font-size: 16px;
+    }
+   }
+    
