@@ -33,6 +33,14 @@
     color: var(--primary-header-color);
 }
 
+/* .Main > .mainChildren > .inputSrchFilter-container > span{ */
+.Main > .mainChildren > span{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    color: var(--primary-header-color);
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--primary-header-color);
     opacity: 1; /* Firefox */
