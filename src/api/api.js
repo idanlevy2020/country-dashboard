@@ -1,8 +1,8 @@
   
-const url = 'https://restcountries.eu/rest/v2';
+const url = 'https://restcountries.com/v3.1';
 
 export function getAllCounrties() {
 	return fetch(`${url}/all`)
 		.then(response => response.json())
-		.then(body => body);
+		.then(data => data);
 }
